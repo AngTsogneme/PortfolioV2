@@ -37,6 +37,7 @@ struct ContentView: View {
                             Image(systemName: board[row][col] ?? "square")
                                 .resizable()
                                 .frame(width: 100, height: 100)
+                                .foregroundColor(.black)
                         }
                     }
                 }
@@ -47,11 +48,36 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .padding(.top, 50.0)
-            }else if(checkWinner() == "o.square.fill"){
+                Button{
+                    board = Array(repeating: Array(repeating: nil, count: 3), count: 3)
+                    currentPlayer = "x.square.fill"
+                }label: {
+                    Text("Restart")
+                }
+            }
+            else if(checkWinner() == "o.square.fill"){
                 Text("Player O is the winner")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .padding(.top, 50.0)
+                Button{
+                    board = Array(repeating: Array(repeating: nil, count: 3), count: 3)
+                    currentPlayer = "x.square.fill"
+                }label: {
+                    Text("Restart")
+                }
+            }
+            else if(board.allSatisfy { row in row.allSatisfy { $0 != nil }}){
+                Text("No winner")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .padding(.top, 50.0)
+                Button{
+                    board = Array(repeating: Array(repeating: nil, count: 3), count: 3)
+                    currentPlayer = "x.square.fill"
+                }label: {
+                    Text("Restart")
+                }
             }
         }
     }
