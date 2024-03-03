@@ -109,6 +109,20 @@ button:hover {
 .home-message{
    width: 37.5rem;
 }
+/* Style for typing animation */
+.home-message h1 {
+    width: 157px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(20) forwards;
+}
+
+
+/* Typing animation keyframes */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 157px; }
+}
 
 
 
@@ -198,6 +212,12 @@ button:hover {
 .tailored-inner button{
     margin: 1.25rem 0;
 }
+.tailored-inner.expand img {
+    transform: scale(1.4); /* Adjust the final scale as needed */
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1); /* Adjust the cubic-bezier values for smoother animation */
+}
+
+
 
 .aquamobile-outer{
     height:100vh;
@@ -222,6 +242,10 @@ button:hover {
 }
 .aquamobile-inner button{
     margin: 1.25rem 0;
+}
+.aquamobile-inner.expand img {
+    transform: scale(1.4); /* Adjust the final scale as needed */
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1); /* Adjust the cubic-bezier values for smoother animation */
 }
 
 
@@ -302,20 +326,6 @@ button:hover {
 }
 .linkedin-container:hover .small-text{
     color: #061523;
-}
-/* Style for typing animation */
-.home-message h1 {
-    width: 157px;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 1s steps(20) forwards;
-}
-
-
-/* Typing animation keyframes */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 157px; }
 }
 
 
@@ -467,4 +477,133 @@ button:hover {
     justify-content: center;
     margin-left: 20.6rem;
     height:50vh;
+}
+
+
+
+.aqua-splash{
+    height: 100vh;
+    margin-left: 20.6rem;
+    
+}
+
+.parallax2{
+    background-image: url(./images/aqua-splash-img.png);
+    width: calc(9.4rem + 100%);
+    margin-left: -4.7rem;
+    margin-top:-10px;
+    
+    
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aqua-description{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    margin-left: 20.6rem;
+    height:100vh;
+}
+.aqua-description p{
+    width: 50rem;
+}
+
+.aqua-users-container{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    margin-left: 20.6rem;
+    height:100vh;
+}
+.aqua-users-card{
+    height:30rem;
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+.aqua-users-card img{
+    width:40%;
+    height: 100%;
+    
+}
+.aqua-users-card-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%
+}
+
+.aqua-userflow-container{
+    display: flex;
+    flex-direction: column;  
+    
+    margin-left: 20.6rem;
+   
+}
+.aqua-userflow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh
+}
+
+.aqua-status-completion-container{
+    display: flex;
+    flex-direction: column;  
+    margin-left: 20.6rem;
+}
+.aqua-status-completion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+
+.aqua-tertiary-buttons-container{
+    display: flex;
+    flex-direction: column;  
+    margin-left: 20.6rem;
+}
+.aqua-tertiary-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+.aqua-contrast-container{
+    display: flex;
+    flex-direction: column;  
+    margin-left: 20.6rem;
+}
+.aqua-contrast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+.aqua-calltoaction-container{
+    display: flex;
+    flex-direction: column;  
+    margin-left: 20.6rem;
+}
+.aqua-calltoaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+.aqua-calltoaction-container img{
+    margin-bottom: 50vh;
+}
+
+.aqua-final-container{
+    display: flex;
+    flex-direction: column;  
+    margin-left: 20.6rem;
+  
 }

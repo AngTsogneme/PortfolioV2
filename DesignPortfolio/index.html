@@ -33,7 +33,7 @@
                 <h1>I'm Ang.</h1>
                 
                 <p> A visual and user experience <span class="highlighted-words">designer</span> with a background in web and mobile development. 
-                    Eager to leverage my expertise to <span class="highlighted-words">create and drive impactful change.</span></p>
+                    I utilize my expertise to <span class="highlighted-words">make meaningful contributions and develop effective solutions.</span></p>
             </div>
         </div>
        
@@ -85,8 +85,8 @@
                         <p class = "small-text">E-Commerce • Responsive</p>
                         <h1>Tailored</h1>
                         <p>Customize your sweatshirts with Tailored to maximize your satisfaction with online shopping.</p>
-                        <a href="./tailored.html">
-                            <button>Read More</button>
+                        <a>
+                            <button onclick="expandImage('tailored')">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         <p>Enhanced the experience of a mobile app used by freelance swim instructors.
                             Researched and solved various pain points.
                         </p>
-                        <button>Coming soon</button>
+                        <button onclick="expandImage('aquamobile')">Read More</button>
                     </div>
                 </div>
             </div>
@@ -177,9 +177,30 @@
                     animationTriggered = true;
                 }
             });
-
-
-
+        </script>
+        <script>
+            function expandImage(cardType) {
+            // Check if the user is using a mobile device
+            if (!(/Mobi|Android/i.test(navigator.userAgent))) {
+                // If not a mobile device, execute the animation
+                var cardInner;
+                if (cardType === 'tailored') {
+                    cardInner = document.querySelector('.tailored-inner');
+                } else if (cardType === 'aquamobile') {
+                    cardInner = document.querySelector('.aquamobile-inner');
+                }
+                
+                if (cardInner) {
+                    cardInner.classList.add('expand'); // Add a CSS class for expanding the image
+                    setTimeout(function() {
+                        window.location.href = "./" + cardType + ".html"; // Transition to tailored.html after a delay
+                    }, 400); // Adjust the delay to match the duration and provide some extra time
+                }
+            } else {
+                // If a mobile device, simply transition to tailored.html without animation
+                window.location.href = "./" + cardType + ".html";
+            }
+        }
         </script>
         
     </body>
