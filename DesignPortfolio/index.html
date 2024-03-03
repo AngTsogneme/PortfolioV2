@@ -191,16 +191,30 @@
                 }
                 
                 if (cardInner) {
-                    cardInner.classList.add('expand'); // Add a CSS class for expanding the image
+                    // Add animation class to trigger the animation
+                    cardInner.classList.add('expand');
+                    
+                    // Set a delay before removing the expand class
                     setTimeout(function() {
-                        window.location.href = "./" + cardType + ".html"; // Transition to tailored.html after a delay
-                    }, 400); // Adjust the delay to match the duration and provide some extra time
+                        // Remove animation class after the delay
+                        cardInner.classList.remove('expand');
+                    }, 400); // Adjust the delay time (in milliseconds) as needed
+                    
+                    // Listen for transition end event to ensure the animation is complete
+                    cardInner.addEventListener('transitionend', function transitionEndHandler() {
+                        // Transition to the respective HTML page after the animation and delay
+                        window.location.href = "./" + cardType + ".html";
+                        
+                        // Remove the event listener to prevent memory leaks
+                        cardInner.removeEventListener('transitionend', transitionEndHandler);
+                    }, {once: true}); // Ensure the event listener is removed after it's triggered once
                 }
             } else {
-                // If a mobile device, simply transition to tailored.html without animation
+                // If a mobile device, simply transition to the respective HTML page without animation
                 window.location.href = "./" + cardType + ".html";
+                }
             }
-        }
+
         </script>
         
     </body>
