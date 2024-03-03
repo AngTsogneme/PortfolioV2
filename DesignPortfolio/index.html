@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <title>Ang Tsog's Design Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+        property="og:description"
+        content="Ang Tsog's user experience, user interface design portfolio designed and built by yours truly with Figma, HTML, CSS, and Javascript."
+        />
+        <meta
+        name="image"
+        property="og:image"
+        content=""
+        />
+        <meta name="author" content="Ang Tsog" />
+    </head>
+
+    <body>
+        
+        <div class = "nav">
+            <a href="#home" class="nav-link active" data-target="home">Home</a>
+            <a href="#experience" class="nav-link" data-target="experience">Experience</a>
+            <a href="#projects" class="nav-link" data-target="projects">Projects</a>
+            <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+        </div>
+    
+        <div class="home-message-container" id="home">
+            <div class = "home-message">
+                <h3>Hi</h3>
+                <h1>I'm Ang.</h1>
+                
+                <p> A visual and user experience <span class="highlighted-words">designer</span> with a background in web and mobile development. 
+                    Eager to leverage my expertise to <span class="highlighted-words">create and drive impactful change.</span></p>
+            </div>
+        </div>
+       
+        <div class="experience-container" id = "experience">
+
+            <div class = "inventcan-outer" id="inventcanAnimatedContainer">
+                <div class="inventcan-inner" id = "card">
+                    <img src = "images/inventcan.png"/>
+                    <div class = "inventcan-description scroll-trigger" >
+                        <h1>InventCan</h1>
+                        <p>
+                            Led the design of a delivery platform with a mobile app and website. 
+                            New design production <span class="highlighted-words">increased by 50% </span>through the creation of a design system. 
+                            Improved design to <span class="highlighted-words">development process by 30%. </span>
+                            Redesign of landing page resulted in <span class="highlighted-words">increased conversion rates.</span>
+                            <br>
+                            <br>
+                            Please <a href="#contact" style="text-decoration: underline;">contact me</a> for more details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "avybe-outer" id="avybeAnimatedContainer">
+                <div class="avybe-inner" id = "card">
+                    <img src = "images/avybe.png"/>
+                    <div class = "avybe-description">
+                        <h1>Avybe</h1>
+                        <p>
+                            Worked alongside a team of designers and project managers. 
+                            Conducted research to <span class="highlighted-words">enhance user engagement and sign up rates. </span>
+                            Established a responsive flow allowing applicants to apply for open positions and exploration of company info. 
+                            <br>
+                            <br>
+                            Please <a href="#contact" style="text-decoration: underline;">contact me</a> for more details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="projects-container" id = "projects">
+            
+            <div class="tailored-outer">
+                <div class="tailored-inner" id = "card">
+                    <img src = "images/TailoredCover.png"/>
+                    <div class="tailored-description">
+                        <p class = "small-text">E-Commerce • Responsive</p>
+                        <h1>Tailored</h1>
+                        <p>Customize your sweatshirts with Tailored to maximize your satisfaction with online shopping.</p>
+                        <a href="./tailored.html">
+                            <button>Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aquamobile-outer">
+                <div class="aquamobile-inner" id = "card">
+                    <img src = "images/AquamobileCover.png"/>
+                    <div class="aquamobile-description">
+                        <p class = "small-text">Mobile App • Redesign</p>
+                        <h1>Aquamobile</h1>
+                        <p>Enhanced the experience of a mobile app used by freelance swim instructors.
+                            Researched and solved various pain points.
+                        </p>
+                        <button>Coming soon</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-container" id="contact">
+            <div class="contact-inner">
+                <h1>Lets connect!</h1>
+
+                    <a href="mailto:angarag97@gmail.com">
+                        <div class="email-container">
+                            <img src = "images/mail.png"/>
+                            <div class="email">
+                                <h3>Email</h3>
+                                <p class="small-text">angarag97@gmail.com</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a target = "_blank" href="https://www.linkedin.com/in/ang-tsog/">
+                        <div class="linkedin-container">
+                            <img src = "images/linkedin.png"/>
+                            <div class="linkedin">
+                                <h3>Linkedin</h3>
+                                <p class="small-text">Ang Tsog</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+                var navLinks = document.querySelectorAll('.nav-link');
+                
+                navLinks.forEach(function(navLink) {
+                    var sectionId = navLink.getAttribute('data-target');
+                    var section = document.getElementById(sectionId);
+                    var bounding = section.getBoundingClientRect();
+                    
+                    var scrollTriggerPosition = bounding.top - (window.innerHeight / 2);
+
+                    if (scrollTriggerPosition <= 0 && bounding.bottom > 0) {
+                        navLinks.forEach(function(link) {
+                            link.classList.remove('active');
+                        });
+                        navLink.classList.add('active');
+                    }
+
+                    });
+                });
+        </script>
+        
+        <script>
+           // Define a boolean flag to track whether the animation has been triggered
+            var animationTriggered = false;
+
+            window.addEventListener('scroll', function() {
+                var inventcanOuter = document.getElementsByClassName('inventcan-outer')[0];
+                var bounding = inventcanOuter.getBoundingClientRect();
+                var scrollTriggerPosition = bounding.top - (window.innerHeight / 2);
+
+                // Check if the scroll position triggers the animation and the animation hasn't been triggered before
+                if (scrollTriggerPosition <= 0 && bounding.bottom > 0 && !animationTriggered) {
+                    inventcanOuter.classList.add("bounce-in-right");
+                    
+                    // Set the flag to true to indicate that the animation has been triggered
+                    animationTriggered = true;
+                }
+            });
+
+
+
+        </script>
+        
+    </body>
+</html>
