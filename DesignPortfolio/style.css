@@ -5,7 +5,10 @@ body{
     font-size: 1.3rem;
     margin-right: 4.7rem;
     margin-left:4.7rem;
+    background-color: #001414;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23001212' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E"); */
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -16,7 +19,7 @@ a{
     font-size: inherit;
 }
 h1{
-    font-size: 2.6rem;
+    font-size: 3.2rem;
     color:#ACF73B;
     font-weight: 100;
 }
@@ -86,6 +89,28 @@ button:hover {
 
 }
 
+/* CSS for fading in from bottom */
+.fade-in-bottom {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-bottom.fade-in-bottom-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the particles are behind other content */
+    background-size: cover; /* Make sure particles cover the entire background */
+    background-position: 50% 50%; /* Center the background */
+}
 
 
 
@@ -121,7 +146,7 @@ button:hover {
 /* Typing animation keyframes */
 @keyframes typing {
     from { width: 0; }
-    to { width: 157px; }
+    to { width: 177px; }
 }
 
 
@@ -132,7 +157,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-left: 20.6rem;
-    
+    opacity: 0.8;
     
 }
 .inventcan-outer{
@@ -182,6 +207,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-left: 20.6rem;
+    opacity: 0.8;
 }
 .tailored-outer{
     height:100vh;
@@ -606,3 +632,5 @@ button:hover {
     margin-left: 20.6rem;
   
 }
+
+
