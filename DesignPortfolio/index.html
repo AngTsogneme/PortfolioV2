@@ -231,7 +231,7 @@
                 
                 if (innerContainer) {
                     var bounding = innerContainer.getBoundingClientRect();
-                    var scrollTriggerPosition = bounding.top - (window.innerHeight / 2);
+                    var scrollTriggerPosition = bounding.top - (window.innerHeight / 1.5);
 
                     if (scrollTriggerPosition <= 0 && bounding.bottom > 0) {
                         innerContainer.classList.add('fade-in-bottom-active');
