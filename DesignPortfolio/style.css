@@ -109,17 +109,12 @@ button:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        opacity: 1;
-        transition: opacity 0.5s, transform 0.5s;
         
     }
     .home-message{
         width: 75%;
     }
-    .hidden {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
+    
 
     /* Style for typing animation */
     .home-message h1 {
@@ -133,7 +128,16 @@ button:hover {
         from { width: 0; }
         to { width: 177px; }
     }
+    .about-container{
+        height:70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-inner{
+        width: 75%;
 
+    }
    
     .inventcan-outer{
        height: 100vh;
@@ -307,6 +311,7 @@ button:hover {
         font-size: 1.3rem;
         margin-right: 4.7rem;
         margin-left:4.7rem;
+        line-height: 1.5;
     }
     
     .nav {
@@ -357,13 +362,9 @@ button:hover {
         margin-left: 20.6rem;
 
     }
-    .hidden {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-
+    
     .home-message{
-    width: 37.5rem;
+        width: 37.5rem;
     }
     /* Style for typing animation */
     .home-message h1 {
@@ -379,7 +380,20 @@ button:hover {
         from { width: 0; }
         to { width: 177px; }
     }
+    .about-container{
+        height:100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: opacity 0.5s, transform 0.5s;
+        margin-left: 20.6rem;
+    }
+    .about-inner{
+        width: 37.5rem;
 
+    }
 
 
     .experience-container{
