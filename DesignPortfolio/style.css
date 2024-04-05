@@ -297,6 +297,82 @@ button:hover {
     .linkedin{
         width: 123px;
     }
+    .tailored-splash{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tailored-splash h2{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+    }
+    .why-tailored-container{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .why-tailored-container img{
+        width:100%;
+        object-fit: contain;
+    }
+    .tailored-opportunities-container{
+        height:55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tailored-users-container{
+        height:150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tailored-users-container img{
+        width:100%;
+        object-fit: contain;
+    }
+    .zoomin-container{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wireframes-container{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wireframes-container img{
+        width:100%;
+        object-fit: contain;
+    }
+    .mockups{
+        height:50vh;
+    }
+    .mockups img{
+        width:100%;
+        object-fit: contain;
+    }
+    .tailored-video{
+        height:50vh;
+        width:100%;
+        object-fit: contain;
+    }
+    .next-steps-container{
+        height: 50vh;
+    }
 }
 
 
