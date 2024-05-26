@@ -38,6 +38,7 @@ button{
     color:#EBFEFF;
     padding: 0.563rem 1.25rem;
     border-style: solid;
+    border-color: #ebfeff;
     cursor: pointer;
     background-image: linear-gradient(to top, #ebfeff 0%, #ebfeff 50%, transparent 50%, transparent 100%);
     background-size: 100% 200%; /* Double the width to cover the entire button */
