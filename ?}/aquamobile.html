@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <title>Ang Tsog's Design Portfolio • Aquamobile Redesign</title>
+        <link rel="icon" type="image/x-icon" href="/images/fav-icon.png">
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+        property="og:description"
+        content="Ang Tsog's user experience, user interface design portfolio designed and built by yours truly with Figma, HTML, CSS, and Javascript."
+        />
+        <meta
+        name="image"
+        property="og:image"
+        content=""
+        />
+        <meta name="author" content="Ang Tsog" />
+    </head>
+
+    <body>
+        <div class = "nav">
+            <a href="index.html#home" class="nav-link" data-target="home">Home</a>
+            <a href="index.html#experience" class="nav-link" data-target="experience">Experience</a>
+            <a href="index.html#projects" class="nav-link active" data-target="projects">Projects</a>
+            <a href="index.html#contact" class="nav-link" data-target="contact">Contact</a>
+        </div>
+
+        <div class="aqua-splash">
+            <div class = "parallax2"></div>
+        </div>
+
+        <div class="aqua-description">
+            <p>AquaMobile is a platform used for booking private swimming lessons in which the swimming instructors come to you. 
+                The mobile app used by swimming instructors was not optimized to provide trouble free user experience.
+            </p>
+        </div>
+
+        <div class="aqua-users-container">
+            <div class="aqua-users">
+                <h1>Users</h1>
+                <div class="aqua-users-card" id="card">
+                    <img src="./images/aqua-users-img.jpeg"/>
+                    <div class = "aqua-users-card-description">
+                        <p>Users are swimming instructors, many of whom drive to their client locations. The app is frequently used throughout the day to check and update information. </p>
+                            Frustrations:
+                            <ul>
+                                <li>Navigation is not optimized.</li>
+                                <li>Wrong status completions.</li> 
+                                <li>No way to get client addresses without copying and pasting.</li>
+                            </ul>
+                            Goals:
+                            <ul>
+                                <li>An overall more intuitive and optimized app.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aqua-userflow-container">
+            <div class="aqua-userflow">
+                <h1>User navigation</h1>
+                    <p>The most used section of the app was the “My Bookings” section and the second most used was the “My Availability” section. Neither were included in the bottom navigation.</p>
+            </div>
+            <img src = "images/aqua-user-flow-img.png"/>
+        </div>
+
+        <div class="aqua-status-completion-container">
+            <div class="aqua-status-completion">
+                <h1>Status completions</h1>
+                    <p>Instructors are required to click “Arrived” once they have arrived at the clients' location and click “Completed” once they have completed the lesson. 
+                        Displaying bookings from non selected days and with minimal spacing resulted in instructors clicking “Arrived” and “Completed” for bookings on a different day.</p>
+            </div>
+            <img src = "images/aqua-status-completion.png"/>
+        </div>
+
+        <div class="aqua-tertiary-buttons-container">
+            <div class="aqua-tertiary-buttons">
+                <h1>Tertiary buttons</h1>
+                    <p>Instructors had no way to message and get directions without copying and pasting client information to different apps.</p>
+            </div>
+            <img src = "images/aqua-tertiary-img.png"/>
+        </div>
+
+        <div class="aqua-contrast-container">
+            <div class="aqua-contrast">
+                <h1>Contrast</h1>
+                    <p>Color scheme did not meet contrast standards.</p>
+            </div>
+            <img src = "images/aqua-contrast-img.png"/>
+        </div>
+
+        <div class="aqua-calltoaction-container">
+            <div class="aqua-calltoaction">
+                <h1>Call to action</h1>
+                    <p>Call to action buttons are hard to identify due to the mixture of other contents with the same color scheme. 
+                        Makes the process of editing availability and services confusing.</p>
+            </div>
+            <img src = "images/aqua-calltoaction-img.png"/>
+        </div>
+
+        <div class="aqua-final-container">
+            
+            <img src = "images/aqua-final-img.png"/>
+        </div>
+
+
+        <div class="contact-container" >
+            <div class="contact-inner">
+                <h1>Have a question? Let's chat.</h1>
+
+                    <a href="mailto:angarag97@gmail.com">
+                        <div class="email-container">
+                            <img src = "images/mail.png"/>
+                            <div class="email">
+                                <h3>Email</h3>
+                                <p class="small-text">angarag97@gmail.com</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a target = "_blank" href="https://www.linkedin.com/in/ang-tsog/">
+                        <div class="linkedin-container">
+                            <img src = "images/linkedin.png"/>
+                            <div class="linkedin">
+                                <h3>Linkedin</h3>
+                                <p class="small-text">Ang Tsog</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="small-text" style ="text-align: center; font-size: 1rem;">2024 • Designed and coded by Ang.</p>
+        </footer>
+
+    </body>
+</html>

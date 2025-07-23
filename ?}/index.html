@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <title>Ang Tsog's Design Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/images/fav-icon.png">
+        <meta name="google-site-verification" content="Sl_fo--WIFm4EHYKQKDsitZknsUDpiSmgvLRRq-paSc" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+        property="og:description"
+        content="Ang Tsog's user experience, user interface design portfolio designed and built by yours truly with Figma, HTML, CSS, and Javascript."
+        />
+        <meta
+        name="image"
+        property="og:image"
+        content=""
+        />
+        <meta name="author" content="Ang Tsog" />
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        <div class = "nav">
+            <a href="#home" class="nav-link active" data-target="home">Home</a>
+            <a href="#experience" class="nav-link" data-target="experience">Experience</a>
+            <a href="#projects" class="nav-link" data-target="projects">Projects</a>
+            <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+
+        </div>
+    
+        <div class="home-message-container" id="home">
+            <div class = "home-message">
+                <h3>Hi,</h3>
+                <h1>I'm Ang.</h1>
+                
+                <p> A visual and user experience <span class="highlighted-words">designer</span> with a background in web and mobile development. 
+                    I utilize my expertise to <span class="highlighted-words">make meaningful contributions and develop effective solutions.</span></p>
+            </div>
+        </div>
+        <div class = "about-container">
+            <div class = "about-inner fade-in-bottom">
+                <h1> About me </h1>
+                <p> 
+                    After learning to code, I realized I love <span class="highlighted-words">problem solving and thinking innovatively.</span> This fueled
+                    my desire to become a UX Designer because it allowed me to <span class="highlighted-words">utilize my logic and creativity. </span>
+                    <br/>
+                    <br/>
+                    I realized just how challenging it is to create well designed products after learning the basics and
+                    creating projects on my own. The failures along the way would ultimately narrow <span class="highlighted-words">my design
+                    philosphy to prioritize balance. </span>
+                    <br/>
+                    <br/>
+                    I think what sets apart a good design from the rest, are the result of how effectively the <span class="highlighted-words">
+                    design balances simplicity with sophistication, usability with functionality, and user needs with business needs.</span>
+                </p>
+            </div>
+        </div>
+       
+
+        <div class="experience-container" id = "experience">
+            <a href="https://joyn.tokyo/">
+                <div class = "joyntokyo-outer" id="joyntokyoAnimatedContainer">
+                    <div class="joyntokyo-inner fade-in-bottom fade-in-bottom-active" id = "card">
+                        <img src = "images/joyntokyo-web01.webp"/>
+                        <div class = "joyntokyo-description">
+                            <h1>JoynTokyo</h1>
+                            <p>
+                                Develop and maintain a platform meant to help foreigners moving to, and already living in Japan.
+                                In charge of creating <span class= "highlighted-words">new features, debugging, and SEO marketing. </span>
+                                <br>
+                                <br>
+                                Please <a href="#contact" style="text-decoration: underline;">contact me</a> for more details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <div class = "inventcan-outer" id="inventcanAnimatedContainer">
+                <div class="inventcan-inner fade-in-bottom" id = "card">
+                    <img src = "images/inventcan.png"/>
+                    <div class = "inventcan-description" >
+                        <h1>InventCan</h1>
+                        <p>
+                            Led the design of a delivery platform with a mobile app and website. 
+                            New design production <span class="highlighted-words">increased by 50% </span>through the creation of a design system. 
+                            Improved design to <span class="highlighted-words">development process by 30%. </span>
+                            Redesign of landing page resulted in <span class="highlighted-words">increased conversion rates.</span>
+                            <br>
+                            <br>
+                            Please <a href="#contact" style="text-decoration: underline;">contact me</a> for more details.
+                        </p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class = "avybe-outer" id="avybeAnimatedContainer">
+                <div class="avybe-inner fade-in-bottom" id = "card">
+                    <img src = "images/avybe.png"/>
+                    <div class = "avybe-description">
+                        <h1>Avybe</h1>
+                        <p>
+                            Worked alongside a team of designers and project managers. 
+                            Conducted research to <span class="highlighted-words">enhance user engagement and sign up rates. </span>
+                            Established a responsive flow allowing applicants to apply for open positions and exploration of company info. 
+                            <br>
+                            <br>
+                            Please <a href="#contact" style="text-decoration: underline;">contact me</a> for more details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="projects-container" id = "projects">
+            
+            <div class="tailored-outer">
+                <div class="tailored-inner fade-in-bottom" id = "card">
+                    <img src = "images/TailoredCover.png"/>
+                    <div class="tailored-description">
+                        <p class = "small-text">E-Commerce • Responsive</p>
+                        <h1>Tailored</h1>
+                        <p>Customize sweatshirts with Tailored, designed to increase satisfaction with online shopping.</p>
+                        <a>
+                            <button onclick="expandImage('tailored')">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aquamobile-outer">
+                <div class="aquamobile-inner fade-in-bottom" id = "card">
+                    <img src = "images/AquamobileCover.png"/>
+                    <div class="aquamobile-description">
+                        <p class = "small-text">Mobile App • Redesign</p>
+                        <h1>Aquamobile</h1>
+                        <p>Enhanced the experience of a mobile app used by freelance swim instructors.
+                            Researched and solved various pain points.
+                        </p>
+                        <button onclick="expandImage('aquamobile')">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contact-container" id="contact">
+            <div class="contact-inner">
+                <h1>Lets connect!</h1>
+
+                    <a href="mailto:angarag97@gmail.com">
+                        <div class="email-container">
+                            <img src = "images/mail.png"/>
+                            <div class="email">
+                                <h3>Email</h3>
+                                <p class="small-text">angarag97@gmail.com</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a target = "_blank" href="https://www.linkedin.com/in/ang-tsog/">
+                        <div class="linkedin-container">
+                            <img src = "images/linkedin.png"/>
+                            <div class="linkedin">
+                                <h3>Linkedin</h3>
+                                <p class="small-text">Ang Tsog</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="small-text" style ="text-align: center; font-size: 1rem;">2024 • Designed and coded by Ang.</p>
+            <!-- <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/" style = "text-align: center; font-size: 1rem;">Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a> -->
+
+        </footer>
+
+        <script>
+            var lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+                var navLinks = document.querySelectorAll('.nav-link');
+                
+                navLinks.forEach(function(navLink) {
+                    var sectionId = navLink.getAttribute('data-target');
+                    var section = document.getElementById(sectionId);
+                    var bounding = section.getBoundingClientRect();
+                    
+                    var scrollTriggerPosition = bounding.top - (window.innerHeight / 2);
+
+                    if (scrollTriggerPosition <= 0 && bounding.bottom > 0) {
+                        navLinks.forEach(function(link) {
+                            link.classList.remove('active');
+                        });
+                        navLink.classList.add('active');
+                    }
+
+                    });
+                });
+        </script>
+        
+        <script>
+           // Define a boolean flag to track whether the animation has been triggered
+            var animationTriggered = false;
+
+            window.addEventListener('scroll', function() {
+                var inventcanOuter = document.getElementsByClassName('inventcan-outer')[0];
+                var bounding = inventcanOuter.getBoundingClientRect();
+                var scrollTriggerPosition = bounding.top - (window.innerHeight / 2);
+
+                // Check if the scroll position triggers the animation and the animation hasn't been triggered before
+                if (scrollTriggerPosition <= 0 && bounding.bottom > 0 && !animationTriggered) {
+                    inventcanOuter.classList.add("bounce-in-right");
+                    
+                    // Set the flag to true to indicate that the animation has been triggered
+                    animationTriggered = true;
+                }
+            });
+        </script>
+        <script>
+            function expandImage(cardType) {
+            // Check if the user is using a mobile device
+            if (!(/Mobi|Android/i.test(navigator.userAgent))) {
+                // If not a mobile device, execute the animation
+                var cardInner;
+                if (cardType === 'tailored') {
+                    cardInner = document.querySelector('.tailored-inner');
+                } else if (cardType === 'aquamobile') {
+                    cardInner = document.querySelector('.aquamobile-inner');
+                }
+                
+                if (cardInner) {
+                    cardInner.classList.add('expand'); // Add a CSS class for expanding the image
+                    setTimeout(function() {
+                        window.location.href = "./" + cardType + ".html"; // Transition to tailored.html after a delay
+
+                    }, 400); // Adjust the delay to match the duration and provide some extra time
+                }
+            } else {
+                // If a mobile device, simply transition to tailored.html without animation
+                window.location.href = "./" + cardType + ".html";
+            }
+        }
+
+        </script>
+        <script>
+            window.addEventListener('scroll', function() {
+            // Define an array of inner containers
+            var innerContainers = [
+                'inventcan-inner',
+                'avybe-inner',
+                'tailored-inner',
+                'aquamobile-inner',
+                'about-inner'
+            ];
+
+            innerContainers.forEach(function(containerClass) {
+                var innerContainer = document.querySelector('.' + containerClass);
+                
+                if (innerContainer) {
+                    var bounding = innerContainer.getBoundingClientRect();
+                    var scrollTriggerPosition = bounding.top - (window.innerHeight / 1.5);
+
+                    if (scrollTriggerPosition <= 0 && bounding.bottom > 0) {
+                        innerContainer.classList.add('fade-in-bottom-active');
+                    }
+                }
+            });
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS('particles-js',
+          
+            {
+            "particles": {
+                "number": {
+                "value": 14,
+                "density": {
+                    "enable": true,
+                    "value_area": 1104.824135672403
+                }
+                },
+                "color": {
+                "value": "#ffffff"
+                },
+                "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+                },
+                "opacity": {
+                "value": 0.48927926008349276,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+                },
+                "size": {
+                "value": 3.9458004845442964,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+                },
+                "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+                },
+                "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+                },
+                "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                    "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+                }
+            },
+            "retina_detect": true
+            }
+
+        
+          );
+        </script>
+        
+    </body>
+</html>
