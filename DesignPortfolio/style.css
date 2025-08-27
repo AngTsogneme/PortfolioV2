@@ -394,6 +394,49 @@ button:hover {
     .next-steps-container{
         height: 50vh;
     }
+    .aqua-description{
+        padding: 25px 0 25px 0;
+    }
+    .aqua-users-card img{
+        width:100%;
+    }
+    .aqua-users-card-description{
+        padding:15px;
+    }
+    .aqua-userflow-container{
+        margin-top: 75px;
+    }
+    .aqua-userflow-container img{
+        width:100%;
+    }
+    .aqua-status-completion-container{
+        margin-top:75px;
+    }
+    .aqua-status-completion-container img{
+        width:100%;
+    }
+    .aqua-tertiary-buttons-container{
+        margin-top:75px;
+    }
+    .aqua-tertiary-buttons-container img{
+        width:100%;
+    }
+    .aqua-contrast-container{
+        margin-top:75px;
+    }
+    .aqua-contrast-container img{
+        width:100%;
+    }
+    .aqua-calltoaction-container{
+        margin-top:75px;
+    }
+    .aqua-calltoaction-container img{
+        width:100%;
+    }
+    .aqua-final-container img{
+        width:100%;
+        margin-top:100px;
+    }
 }
 
 
@@ -521,6 +564,29 @@ button:hover {
     .joyntokyo-description {
         width: 50%;
     }
+
+    .exomere-outer {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .exomere-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30rem;
+        gap: 7rem;
+    }
+    .exomere-inner img {
+        object-fit: contain;
+        width:350px;
+        margin-right: -50px;
+    }
+    .exomere-description {
+        width: 50%;
+    }
+
     .inventcan-outer{
         height:100vh;
         width: 100%;
