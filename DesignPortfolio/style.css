@@ -73,8 +73,8 @@ button:hover {
         color: #E6FDC4;
         font-family: Futura;
         font-size: 1rem;
-        margin-right:1rem;
-        margin-left:1rem;
+        padding-right:25px;
+        padding-left:25px;
         
     }
     h1{
@@ -112,9 +112,6 @@ button:hover {
         justify-content: center;
         
     }
-    .home-message{
-        width: 75%;
-    }
     
 
     /* Style for typing animation */
@@ -135,10 +132,6 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
-    .about-inner{
-        width: 75%;
-
-    }
 
     .joyntokyo-outer {
         height: 100vh;
@@ -146,11 +139,29 @@ button:hover {
         align-items: center;
     }
     .joyntokyo-outer img {
-        width: 10rem;
-        height:auto;
-        object-fit:contain;
+        width:100%;
+
     }
     .joyntokyo-inner {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        opacity: 1;
+    }
+
+    .exomere-outer {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .exomere-outer img {
+        width:100%;
+        
+    }
+    .exomere-inner {
         height: 70%;
         display: flex;
         flex-direction: column;
